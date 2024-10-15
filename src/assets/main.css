@@ -1,0 +1,268 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+html{
+	overflow:hidden;
+}
+html,
+body{
+	margin:0;
+	padding:0;
+	background-color:#F9FAFB;
+	font-family:Figtree;
+	min-height:100%;
+	display:flex;
+	width:100%;
+}
+
+#app{
+	width:100%;
+	min-height:100%;
+}
+.logoName {
+	font-family: Figtree;
+	font-size: 20px;
+	font-weight: 800;
+	line-height: 26px;
+	letter-spacing: -0.02em;
+	text-align: left;
+}
+
+.contentwrp{
+	max-width: 1070px;
+	margin:0 auto;
+}
+
+.breadcrumbswrp{
+	margin-top:30px;
+	margin-bottom:30px;
+	display: flex;
+}
+
+.breadcrumbswrp > li,
+.breadcrumbswrp > li > a{
+	color:rgba(65, 78, 98, 1);
+	font-size:14px;
+	font-weight: 500;
+	text-decoration: none;
+	margin:0 5px !important;
+}
+
+.breadcrumbswrp > li{
+	cursor: default !important;
+}
+
+.page-title{
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 700;
+	color:rgba(0, 51, 102, 1);
+}
+
+.frm-title{
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 700;
+	color:rgba(0, 51, 102, 1);
+	margin-top:0px;
+	position: relative;
+}
+
+.frm-title::after{
+	content:'';
+	position: absolute;
+	background-image:url('/src/assets/chevtop.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width:15.39px;
+	height: 7.46px;
+	right: 10px;
+	top:5px;
+}
+
+.horizontal-layout{
+	display: flex;
+	gap:30px;
+	margin-bottom:20px;
+}
+
+.horizontal-layout > div{
+	width:100%;
+}
+
+.error{
+	color:rgba(242, 13, 13, 1);
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.horizontal-layout > div label{
+	font-size: 14px;
+	line-height: 17.5px;
+	font-weight: 500;
+}
+
+.frmNoteWrp{
+	border-radius: 8px;
+	border:0.2px solid rgba(151, 161, 175, 1);
+	background-color: rgba(229, 242, 255, 1);
+	padding:15px;
+	color:rgba(0, 51, 102, 1);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 23.4px;
+}
+
+.frmNoteWrpDark{
+	background-color: rgba(50, 173, 230, 1);
+}
+
+.frmBoxWrp{
+	border-radius: 8px;
+	border:0.2px solid rgba(151, 161, 175, 1);
+	background-color: #fff;
+	padding:15px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 23.4px;
+	margin-top:20px;
+}
+
+.btnnext{
+	padding: 12px 20px 12px 20px;
+	gap: 10px;
+	border-radius: 100px;
+	display: flex;
+	background-color: rgba(0, 51, 102, 1);
+	color:#fff;
+	cursor: pointer;
+}
+
+.btnnext:disabled{
+	background-color: rgba(206, 210, 218, 1);
+	color:rgba(151, 161, 175, 1);
+}
+
+ul {
+  font-size: 14px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 10px;
+}
+
+li:hover {
+  cursor: pointer;
+  color: #84cef1;
+}
+
+.k-drawer{
+	padding-left:7px;
+}
+
+.k-drawer-items{
+	margin-top:20px !important;
+}
+.k-drawer-items > li{
+	padding-top:10px;
+	padding-bottom:10px;
+	position:relative;
+}
+
+.k-drawer-container{
+	height:100%;
+}
+
+.k-drawer-items > li .imgIco{
+	float:left;
+}
+
+.k-drawer-items > li .imgIco:after{
+	content:'';
+	width:35px;
+	height:35px;
+	position:absolute;
+
+	left: -8px;
+    top: 2px;
+	border-radius:50%;
+}
+
+.k-drawer-items > li .k-item-text{
+	margin-left:15px;
+	float:left;
+}
+
+.k-drawer-items > li.active .imgIco:after{
+	background-color: rgba(242, 244, 247, 1);
+}
+
+.k-drawer-items > li .imgIco img{
+	position:relative;
+	z-index:1;
+}
+
+.highlightnote{
+	position:absolute;
+	width:8px;
+	height:8px;
+	background: var(--Warning-600, rgba(245, 163, 0, 1));
+	border-radius:50%;
+	top:1px;
+}
+
+.uname{
+	font-size:14px;
+	font-weight:600;
+}
+
+.k-appbar{
+	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.08) !important;
+	padding-left: 13px !important;
+    padding-right: 30px !important;
+}
+.k-avatar-solid-primary{
+	background-color:unset !important;
+}
+.k-avatar-image img{
+	width:32px;
+	height:32px;
+	border-radius:50%;
+}
+
+.k-appbar-light{
+	background-color:#fff !important;
+}
+
+.k-appbar-section.actions > img{
+	width:20px;
+	height:20px;
+}
+
+.k-button.k-button-md.k-rounded-md.k-button-solid.k-button-solid-base {
+  padding: 0;
+}
+
+.k-drawer-content{
+	position: relative;
+}
+
+.frmbtnwrp{
+	box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.12);
+	background-color: #fff;
+	position: fixed;
+	bottom:0;
+	width:100%;
+	padding-top:10px;
+	padding-bottom: 10px;
+	z-index: 3;
+}
+
+.frmbtnwrp > div{
+	display: flex;
+	justify-content: end;
+	padding-right: 35px;
+}
